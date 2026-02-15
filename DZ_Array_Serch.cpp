@@ -19,13 +19,12 @@ int SerchArray(int* arr, int dot, int size) {
 			left = i + 1;
 		};
 	};
-	if (arr[left] == dot) {
-		quant = size-(left+2);
+	if (arr[left] > dot) {
+		quant = size-left;
 	}
-	else if (arr[left] > dot) {
-		quant = size - left;
-	}
-	else { quant = size - (left + 1); };
+	else {
+		quant = size - (left + 1); 
+	};
 	return quant;
 }
 
