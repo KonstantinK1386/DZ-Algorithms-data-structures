@@ -20,12 +20,12 @@ int SerchArray(int* arr, int dot, int size) {
 		};
 	};
 	if (arr[left] == dot) {
-		quant = size-(left+1);
+		quant = size-(left+2);
 	}
 	else if (arr[left] > dot) {
 		quant = size - left;
 	}
-	else { quant = size - (left + 2); };
+	else { quant = size - (left + 1); };
 	return quant;
 }
 
