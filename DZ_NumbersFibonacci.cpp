@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <Windows.h>
 
-int NumFibonacci(int n)
+unsigned long long int NumFibonacci(unsigned long long int n)
 {
 	if (n == 1)
 		return 0;
@@ -16,7 +16,7 @@ int main() {
 	SetConsoleCP(1251);
 	setlocale(LC_ALL, "RU");
 
-	int n;
+	unsigned long long int n;
 	std::cout << "Введите колличество чисел Фибоначчи : ";
 	std::cin >> n;
 	std::cout << NumFibonacci(n)<< "\n";
